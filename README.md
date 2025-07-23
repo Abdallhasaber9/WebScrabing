@@ -1,2 +1,2 @@
-# WebScrabing
-wuzzuf webscrabing
+# WebScraping
+wuzzuf webscraping
