@@ -1,56 +1,58 @@
-📌 وصف المشروع:
-مشروع Python يقوم بعمل Web Scraping لموقع Wuzzuf لاستخراج بيانات الوظائف بناءً على كلمة بحث يكتبها المستخدم (مثل: "Python Developer").
-يعرض النتائج في جدول منسق ويتم حفظها في ملف CSV.
+📌 Project Description: Web Scraping Wuzzuf Job Listings
+📝 Overview:
+A Python project that performs Web Scraping on the Wuzzuf job site to extract job postings based on a search keyword entered by the user (e.g., "Python Developer").
+The results are displayed in a formatted table and saved into a CSV file for later use or analysis.
 
-🎯 هدف المشروع:
+🎯 Project Objectives:
+Simplify the job search process.
 
-تسهيل البحث عن الوظائف.
+Collect useful data about the labor market and job trends.
 
-جمع معلومات مفيدة عن سوق العمل.
+Enable future data analysis using tools like Excel or Power BI.
 
-إمكانية تحليل البيانات لاحقًا باستخدام Excel أو أدوات تحليل مثل Power BI.
+🔧 Tools and Technologies Used:
+Tool	Purpose
+requests	To send HTTP requests and fetch HTML content
+BeautifulSoup	To parse and extract elements from HTML
+pandas	To organize and clean data into table format
+Google Colab (optional)	To display data interactively
+CSV	To store the results in a structured file
 
- 🔧 الأدوات والتقنيات المستخدمة:
-                                                                                                                                                                                          requests → إرسال الطلبات للموقع.
-                                                                                                                                                                          BeautifulSoup → تحليل صفحة HTML واستخراج البيانات.
-                                                                                                                                                                                  pandas → إنشاء وتنظيف البيانات في شكل جدول.
-                                                                                                                                                                          Google Colab (اختياري) → عرض الجدول بشكل تفاعلي.
-                                                                                                                                                                                CSV → لحفظ النتائج على شكل ملف يمكن فتحه لاحقًا.
+📥 Inputs:
+The user is prompted to enter a job title via input()
+(e.g., "Flutter Developer", "Data Analyst", etc.)
 
-📥 المدخلات:
+📤 Outputs:
+Display: The first 10 job listings shown as a formatted table.
 
-عنوان الوظيفة (مثلاً: Python Developer، Flutter، Data Analyst).
+File Save: All extracted results saved to jobs.csv.
 
-يتم إدخاله من المستخدم باستخدام input().
+Extracted Fields:
 
-📤 المخرجات:
+Field	Description
+Title	Job title
+Link	URL to the job post
+Occupation	Career field or specialization
+Company	Name of the hiring company
+Specs	Short description or summary
+Location	Location of the job
+Company Address	Company address (if available)
 
-جدول يحتوي على:
+✅ Project Features:
+Fetches multiple pages of job listings, not just the first one.
 
-عنوان الوظيفة (Title)
+Extracts accurate and useful job details.
 
-رابط الوظيفة (Link)
+Saves data in a CSV file for future use or visualization.
 
-مجال العمل (Occupation)
+Supports interactive display in tools like Google Colab.
 
-اسم الشركة (Company)
+Highly flexible for future improvements such as:
 
-وصف الوظيفة المختصر (Specs)
+Filtering by city or company
 
-موقع الوظيفة (Location)
+Scheduling daily job fetches
 
-عنوان الشركة (Company Address)
+Adding email alerts or notifications
 
-عرض أول 10 نتائج في الشاشة.
 
-حفظ النتائج الكاملة في ملف CSV.
-
-✅ مميزات المشروع:
-
-يجلب الوظائف من جميع صفحات البحث.
-
-يوفر بيانات دقيقة ومفصلة.
-
-يدعم عرض النتائج بطريقة تفاعلية داخل Colab.
-
-يمكن استخدام البيانات لتحليلات مستقبلية أو عمل تقارير.
